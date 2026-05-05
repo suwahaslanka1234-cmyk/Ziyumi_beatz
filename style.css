@@ -8,7 +8,7 @@ body.dark-theme {
     overflow-x: hidden;
 }
 
-/* --- NAVBAR CSS (Capture5.PNG විදිහට සකස් කළා) --- */
+/* --- NAVBAR FIX (අයිතම දෙපැත්තට කරන කොටස) --- */
 header {
     width: 100%;
     height: 90px;
@@ -24,14 +24,14 @@ header {
 
 .nav-container {
     width: 100%;
-    max-width: 100%; /* මුළු තිරයම පාවිච්චි කිරීමට */
+    max-width: 100%; /* සම්පූර්ණ තිරයම පාවිච්චි කරයි */
     display: flex;
-    justify-content: space-between; /* අයිතම දෙපැත්තට තල්ලු කරයි */
+    justify-content: space-between;
     align-items: center;
-    padding: 0 40px; /* අයිනට තියෙන පරතරය */
+    padding: 0 50px; /* අයිනෙන් තියෙන පරතරය */
 }
 
-/* ලෝගෝ එක වම් පැත්තේ රඳවා ගැනීමට */
+/* ලෝගෝ එක වම් පැත්තට තල්ලු කරයි */
 .logo {
     flex: 1;
     display: flex;
@@ -46,9 +46,9 @@ header {
 }
 .logo span { color: #ff4757; }
 
-/* මැද මෙනු එක රඳවා ගැනීමට */
+/* මෙනු එක මැදට තල්ලු කරයි */
 .nav-links {
-    flex: 2;
+    flex: 1;
     display: flex;
     justify-content: center;
     list-style: none;
@@ -65,7 +65,7 @@ header {
 }
 .nav-links li a:hover, .nav-links li a.active { color: #ff4757; }
 
-/* Hire Me බටන් එක දකුණු පැත්තේ රඳවා ගැනීමට */
+/* බටන් එක දකුණු පැත්තට තල්ලු කරයි */
 .nav-btn {
     flex: 1;
     display: flex;
@@ -83,7 +83,6 @@ header {
     transition: 0.3s;
     white-space: nowrap;
 }
-.btn-glow:hover { transform: scale(1.05); background: #ff3648; }
 
 /* --- HERO SECTION --- */
 .hero {
@@ -124,6 +123,7 @@ header {
     line-height: 1.1; 
     margin-bottom: 25px; 
 }
+
 .outline-text { color: transparent; -webkit-text-stroke: 1.5px #fff; }
 
 .gold-text {
@@ -142,7 +142,6 @@ header {
     font-weight: 700;
     border-radius: 10px;
     display: inline-block;
-    transition: 0.3s;
 }
 
 .hero-image { flex: 1; }
